@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.zhengxuetao.gupiao.entity.DayData" table="day_data">
+        <id column="id" name="id" type="java.lang.Long">
+            <generator class="native"/>
+        </id>
+        <property column="time" name="time" type="java.sql.Timestamp"/>
+        <property column="finance_id" name="financeId" type="java.lang.Long"/>
+        <property column="start_price" name="startPrice" type="java.lang.Float"/>
+        <property column="end_price" name="endPrice" type="java.lang.Float"/>
+        <property column="high_price" name="highPrice" type="java.lang.Float"/>
+        <property column="low_price" name="lowPrice" type="java.lang.Float"/>
+        <property column="volume" name="volume" type="java.lang.Long"/>
+        <property column="amount" name="amount" type="java.lang.Double"/>
+    </class>
+</hibernate-mapping>
